@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text: #000000;
+    --background: #c8c8c8;
+    --primary: #9b5800;
+    --secondary: #FDEEC3;
+    --accent: #b78600;
+}
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+    background-color: var(--secondary) !important; 
+    color: var(--text) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+
+}
+
+/* Header */
+.navbar-custom {
+    background-color: var(--primary) !important; /* Light background */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: var(--secondary) !important; /* Custom color for text */
+}
+
+.navbar-custom .nav-link:hover {
+    color: var(--accent) !important; /* Darker color on hover */
+}
+
+.navbar-custom .nav-link.button-look {
+    background-color: var(--accent) !important; /* Custom background color */
+    color: #fff !important; /* White text color */
+    border-radius: 30px !important; /* Rounded corners */
+    padding: 5px 10px !important; /* Padding for button look */
+    margin: 5px !important; /* Margin for spacing */
+    text-align: center !important; /* Center text */
+}
+
+.navbar-custom .nav-link.button-look:hover {
+    background-color: var(--secondary) !important; /* Darker background on hover */
+    color: #000000 !important; /* White text color */
+}
+
+.navbar .container-fluid{
+    justify-content: center !important;
+}
+.navbar-custom .nav-link.button-look
+{
+    margin-right: 30px !important;
+}
+/* Footer */
+
+
+/* Footer container styling */
+.container-footer {
+    background-color: var(--secondary) !important; /* Use primary color for background */
+    color: var(--primary) !important; /* Use secondary color for text */
+    padding: 20px !important; /* Padding for spacing */
+    text-align: center !important; /* Center text */
+    justify-content: center !important; /* Center content */
+}
+
+/* General footer styling */
+footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: var(--primary); /* Use primary color for background */
+    color: var(--text); /* Use secondary color for text */
+}
+
+/* Link styling within the footer */
+footer a {
+    color: var(--accent); /* Use secondary color for links */
+}
+
+footer a:hover {
+    color: var(--accent); /* Use accent color on hover for links */
+}
+
+/* Heading styling within the footer */
+footer h3 {
+    margin-bottom: 20px; /* Add margin to the bottom of headings */
+    color: var(--text);
+}
+
+/* Form control styling within the footer */
+footer .form-control {
+    background-color: var(--background); /* Use background color for form controls */
+    color: var(--text); /* Use text color for form controls */
+    border: 1px solid var(--accent); /* Use accent color for form control borders */
+}
+
+/* Button styling within the footer */
+footer .btn-primary {
+    background-color: var(--primary); /* Use accent color for primary button */
+    border-color: var(--primary); /* Use accent color for primary button border */
+}
+
+footer .btn-primary:hover {
+    background-color: var(--accent); /* Use primary color on hover for primary button */
+    border-color: var(--accent); /* Use primary color on hover for primary button border */
+}
+.list-unstyled {
+    background-color: var(--primary) !important;
+    border-radius: 30px;
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    align-items: center;
+}
+
+.text-center {
+    color: var(--text) !important;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke-width: 4;
+    -webkit-text-stroke-color: #000;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* styles.css */
+.hero-section {
+    height: 100vh; /* Full viewport height */
+    background-size: cover; /* Ensure background image covers the entire section */
+    background-position: center; /* Center the background image */
+    position: relative;
+    margin-top: 20px;
+    width: 100vw;
+    
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+}
+
+.hero-section .container {
+    height: 100%; /* Ensure the container takes up the full height of the section */
+}
+
+.hero-section .text-center {
+    z-index: 1; /* Ensure the text is above the overlay */ 
+}
+
+.hero-section h1{
+    font-size: 4rem !important; /* Adjust the font size as needed */
+    font-weight: bold !important; /* Make the text bold */
+    text-decoration: underline;
+}
+.hero-section p{
+    font-size: 2rem !important; /* Adjust the font size as needed */
+    font-weight: bold !important; /* Make the text bold */
+    text-decoration: underline;
+}
+
+.activities-section {
+    background-color: var(--secondary) !important;
+    color: var(--secondary) !important;
+    padding: 20px !important;
+    text-align: center !important;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.activities-section .card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    color: rgba(255, 255, 255,255) !important; /* 50% transparent white */
+    background-color: var(--accent);
+    border-radius: 40px;
+
+}
+
+.activities-section .text-activities {
+    color: var(--text) !important;
+    font: 100px;
+    font-weight: bold;
+}
+.activities-section .paragraph {
+    color: rgba(0, 0, 0, 0.7) !important; /* 50% transparent white */
+    font: 100px;
+    font-weight: bold;
+    text-align:center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Info section */
+
+.info-section {
+    background-color: var(--primary) !important;
+    color: var(--secondary) !important;
+    padding: 20px !important;
+    text-align: center !important;
+    height: 700px;
+}
+.info-section .container .img{
+    height: 500px;
+}
+.img-fluid {
+    margin-top: 50px;
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    }
+
+.info-section .text-activities {
+    color: rgba(255, 255, 255) !important;
+    font: 100px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 50px;
+}
+.paragraph {
+    color: rgba(255, 255, 255, 0.7) !important;
+    font: 100px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.woodimg img {
+    width: 100%;
+    height: 200px !important;
+    object-fit: cover;
+}
